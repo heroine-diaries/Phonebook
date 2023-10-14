@@ -22,7 +22,7 @@ class Main(tk.Frame):
         # fill растягивает по X (горизонтали)
         toolbar.pack(side=tk.TOP, fill=tk.X)
 
-        self.add_img = tk.PhotoImage(file='D:/python/Block4/Project/img/add.png')
+        self.add_img = tk.PhotoImage(file='./img/add.png')
         # создание кнопки добавления
         # command - функция по нажатию
         # bg - фон
@@ -35,25 +35,25 @@ class Main(tk.Frame):
         btn_open_dialog.pack(side=tk.LEFT)
 
         # создание кнопки изменения данных
-        self.update_img = tk.PhotoImage(file='D:/python/Block4/Project/img/update.png')
+        self.update_img = tk.PhotoImage(file='./img/update.png')
         btn_edit_dialog = tk.Button(toolbar, bg='#d7d8e0', bd=0, 
                                     image=self.update_img, command=self.open_update_dialog)
         btn_edit_dialog.pack(side=tk.LEFT)
 
         # создание кнопки удаления записи
-        self.delete_img = tk.PhotoImage(file='D:/python/Block4/Project/img/delete.png')
+        self.delete_img = tk.PhotoImage(file='./img/delete.png')
         btn_delete = tk.Button(toolbar, bg='#d7d8e0', bd=0, 
                                image=self.delete_img, command=self.delete_records)
         btn_delete.pack(side=tk.LEFT)
 
         # кнопка поиска
-        self.search_img = tk.PhotoImage(file='D:/python/Block4/Project/img/search.png')
+        self.search_img = tk.PhotoImage(file='./img/search.png')
         btn_search = tk.Button(toolbar, bg='#d7d8e0', bd=0,
                                image=self.search_img, command=self.open_search_dialog)
         btn_search.pack(side=tk.LEFT)
 
         # кнопка обновления
-        self.refresh_img = tk.PhotoImage(file='D:/python/Block4/Project/img/refresh.png')
+        self.refresh_img = tk.PhotoImage(file='./img/refresh.png')
         btn_refresh = tk.Button(toolbar, bg='#d7d8e0', bd=0, 
                                 image=self.refresh_img, command=self.view_records)
         btn_refresh.pack(side=tk.LEFT)
